@@ -12,7 +12,7 @@ class ProductsService {
 
     for (let index = 0; index < limit; index++) {
       this.products.push({
-        id: index,
+        id: faker.datatype.uuid(),
         name: faker.commerce.productName(),
         price: parseInt(faker.commerce.price()),
         image: faker.image.imageUrl(),
